@@ -3,7 +3,7 @@ import type { ProductResponse } from '../types/types'
 
 export async function getProductsService(): Promise<ProductResponse> {
   try {
-    const backendUrl = env.backend.URL || 'http://localhost:3000'
+    const backendUrl = env.BACKEND_URL || 'http://localhost:3000'
 
     const productsApiUrl = new URL(`${backendUrl}/product`)
 

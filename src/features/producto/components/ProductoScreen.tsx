@@ -9,7 +9,7 @@ export default function ProductoScreen() {
   const products = data?.items || [] //Extrae la lista de productos
   // const emptyTable = data?.items.length === 0
   const [mostrarFormMarca, setMostrarFormMarca] = useState(false)
-  const [mostrarFormLinea, setMostrarFormLinea] = useState(false)
+  const [mostrarFormLinea,  setMostrarFormLinea] = useState(false)
 
   if (isLoading) {
     return <div className="p-8">Cargando productos...</div>
